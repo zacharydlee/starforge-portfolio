@@ -1,0 +1,204 @@
+/*Universal Styling*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*General Styling*/
+
+h1, h2, h3 {
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 1px;
+    font-optical-sizing: auto;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 1.5;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px
+}
+/*Color Box*/
+
+.colors {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 850px;
+    margin: 0 auto 30px;
+}
+
+.color-title {
+    text-align: center;
+}
+
+.color-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.box {
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+    width: 250px;
+}
+
+.prussian-blue {
+    background-color: #00072D;
+    color:aliceblue;
+}
+
+.deep-navy {
+    background-color: #001C55;
+    color:aliceblue;
+}
+
+.strong-cyan {
+    background-color: #35E0E9;
+}
+
+.ghost-white {
+    background-color: #F4F4F9;
+}
+
+.golden-pollen {
+    background-color: #FFD147;
+}
+
+/*Lower Container*/
+
+.lower-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin: 30px;
+}
+
+.typography {
+    flex: 1;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.buttons {
+    flex: 1;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.text-examples {
+    display: flex;
+    gap: 2rem;
+    padding: 20px;
+}
+
+.title-example {
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 900;
+    
+}
+
+.text-left {
+    flex: 1;
+}
+
+.text-right {
+    flex: 1;
+}
+
+.type-title {
+    text-align: center;
+}
+
+.button-title {
+    text-align: center;
+}
+
+/*Button Styling*/
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-family: "Orbitron", sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    /*Subtle base*/
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:focus {
+    outline: 2px solid #35E0E9;
+}
+
+.button-p {
+    color: #F4F4F9;
+    background-color: #00072D;
+}
+
+.button-p:hover {
+    background-color: #001C55;
+    /*Lift*/
+    transform: translateY(-2px);
+    /*Glow and stronger shadow*/
+    box-shadow:
+        0 6px 12px rgba(0, 0, 0, 0.3),
+        0 0 10px rgba(53, 224, 233, 0.6);
+}
+
+.button-p:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.button-s {
+    color: #00072D;
+    background-color: #F4F4F9;
+    border: 2px solid #00072D;
+}
+
+.button-s:hover {
+    background-color: #FFD147;
+    /*Lift*/
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button-s:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
